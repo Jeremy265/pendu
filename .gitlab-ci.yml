@@ -1,0 +1,16 @@
+image: node:latest
+
+before_script:
+  - apt update -qy
+  - apt install -y ruby-dev
+  - gem install dpl
+
+stages:
+  - dev
+
+dev:
+  type: deploy
+  stage: dev
+  image: ruby:latest
+  script:
+    - dpl --provider=heroku --app=jt-pendu --api-key=36e3a198-3224-4d13-98a6-5d28979fc3b5

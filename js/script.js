@@ -8,7 +8,7 @@ const chooseWord = () => {
     return $.get(dico, (file) => {
         const words = file.split("\r\n");
         const numberOfWords = words.length;
-        const randomNumber = 39;//Math.round((Math.random() * numberOfWords));
+        const randomNumber = Math.round((Math.random() * numberOfWords));
         word = words[randomNumber].toUpperCase();
         for (let i = 0; i < word.length; i++) {
             indexRevealed[i] = false;

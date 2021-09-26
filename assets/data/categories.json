@@ -1,0 +1,22 @@
+{
+  "FRANCAIS": [
+    {
+      "file": "animals.json",
+      "label": "ANIMAUX"
+    },
+    {
+      "file": "fruits.json",
+      "label": "FRUITS"
+    }
+  ],
+  "ENGLISH": [
+    {
+      "file": "animals.json",
+      "label": "ANIMALS"
+    },
+    {
+      "file": "fruits.json",
+      "label": "FRUITS"
+    }
+  ]
+}

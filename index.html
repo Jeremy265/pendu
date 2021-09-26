@@ -23,20 +23,42 @@
 <header class="container text-center">
     <h1>Le jeu du pendu !</h1>
 </header>
+
+<div class="container">
+    <form class="row">
+        <div class="col-md-4">
+            <label for="languages">Langue :</label>
+            <select name="languages" class="form-select" id="languages">
+                <option value="">Choississez une langue</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="categories">Catégorie :</label>
+            <select name="categories" class="form-select" id="categories">
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="start">Démarrer la partie :</label><br>
+            <button type="button" class="btn btn-success" name="start" id="start">Jouer !</button>
+        </div>
+    </form>
+</div>
+
 <div class="container text-center">
     <img src="./assets/images/attempt_1.png" alt="PENDU" id="attempt-image">
-    <p class="text-danger">Tentatives restantes : <span id="attempts-left"></span></p>
+    <p class="text-danger">Tentatives restantes : <span id="attempts-left">la partie n'a pas encore démarré</span></p>
     <h2 id="word"></h2>
     <form>
         <label for="answer" class="form-label">Tapez une lettre ou un mot :</label>
-        <input type="text" class="form-control" name="answer" id="answer" autofocus>
+        <input type="text" class="form-control" name="answer" id="answer" autofocus disabled>
     </form>
     <p class="alert alert-danger" id="error"></p>
-    <h3>Tentatives :</h3>
+    <h3 class="mt-2">Tentatives :</h3>
     <ul id="attempts">
 
     </ul>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>

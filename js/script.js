@@ -3,13 +3,17 @@ let indexRevealed = [];
 attempts = [];
 nbAttemptsToLoose = 6;
 
+const removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 const chooseWord = () => {
     const dico = "./assets/data/dico.txt";
     return $.get(dico, (file) => {
         const words = file.split("\r\n");
         const numberOfWords = words.length;
         const randomNumber = Math.round((Math.random() * numberOfWords));
-        word = words[randomNumber].toUpperCase();
+        word = removeAccents(words[randomNumber]).toUpperCase();
         for (let i = 0; i < word.length; i++) {
             indexRevealed[i] = false;
         }

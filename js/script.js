@@ -188,7 +188,9 @@ const start = () => {
     attempts = [];
     nbAttemptsToLoose = 6;
     $("#error").empty().hide();
-    $("#word").removeClass("text-danger");
+    $("#word")
+        .removeClass("text-danger")
+        .removeClass("text-sucess");
     $("#attempts").empty();
 
     const lang = $("#languages").val();

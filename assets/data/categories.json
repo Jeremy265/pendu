@@ -7,6 +7,10 @@
     {
       "file": "fruits.json",
       "label": "FRUITS"
+    },
+    {
+      "file": "countries.json",
+      "label": "PAYS"
     }
   ],
   "ENGLISH": [
@@ -17,6 +21,10 @@
     {
       "file": "fruits.json",
       "label": "FRUITS"
+    },
+    {
+      "file": "countries.json",
+      "label": "COUNTRIES"
     }
   ]
 }

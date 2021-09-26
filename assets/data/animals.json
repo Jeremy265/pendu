@@ -5,7 +5,10 @@
     "CHIEN",
     "SINGE",
     "ELEPHANT",
-    "POISSON"
+    "POISSON",
+    "CERF",
+    "CHEVREUIL",
+    "PAPILLON"
   ],
   "ENGLISH": [
     "SNAKE",
@@ -13,6 +16,9 @@
     "DOG",
     "MONKEY",
     "ELEPHANT",
-    "FISH"
+    "FISH",
+    "STAG",
+    "DEER",
+    "BUTTERFLY"
   ]
 }

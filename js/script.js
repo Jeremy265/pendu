@@ -190,7 +190,7 @@ const start = () => {
     $("#error").empty().hide();
     $("#word")
         .removeClass("text-danger")
-        .removeClass("text-sucess");
+        .removeClass("text-success");
     $("#attempts").empty();
 
     const lang = $("#languages").val();
